@@ -10,7 +10,8 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 })
 
-io.on('connection', (socket) => {
+io.on('connection', (socket) => { //event handler for a new socket connection
+    socket.broadcast.emit('connection/disconnection message', "New user connected!");
     socket.on("chat message", (msg) => {
         io.emit('chat message', msg);
     });
