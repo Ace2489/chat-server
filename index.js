@@ -18,14 +18,13 @@ app.get('/', (req, res) => {
 io.on('connection', (socket) => { //event handler for a new socket connection
     let name; //declare the name variable for holding the username later
     socket.on('join message', (username) => {
-        name = username; 
+        name = username;
         people[socket.id] = name;
-        console.log(people);
         socket.broadcast.emit('connection/disconnection message', `Update: ${username} joined the chat. Say hi!`);
     })
 
     socket.on("chat message", (msg) => {
-        io.emit('chat message', msg); 
+        io.emit('chat message', msg);
     });
 
     socket.on('disconnect', () => {

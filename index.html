@@ -83,10 +83,13 @@
     let form = document.getElementById('form');
     let input = document.getElementById('input');
 
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('input', function () {
+    });
+
+    form.addEventListener('submit', function (e) {//catch user input and emit it as a socket event
       e.preventDefault();
       if (input.value) {
-        socket.emit('chat message', input.value);
+        socket.emit('chat message', { message: input.value, username: username });
         input.value = '';
       }
     });
@@ -98,7 +101,7 @@
 
     socket.on("chat message", function (msg) {
       let item = document.createElement('li');
-      item.textContent = msg;
+      item.textContent = msg.message + " --- " + "from " + msg.username;
       messages.appendChild(item);
       window.scrollTo(0, document.body.scrollHeight);
     });
