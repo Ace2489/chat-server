@@ -4,6 +4,7 @@ const http = require('http');
 const server = http.createServer(app);
 const { Server } = require('socket.io');
 const io = new Server(server);
+const PORT = process.env.port || 3030;
 
 app.use(express.static('static'));
 
@@ -33,7 +34,7 @@ io.on('connection', (socket) => { //event handler for a new socket connection
     });
 });
 
-server.listen(3000, () => {
+server.listen(PORT, () => {
     console.log(`Listening on port 3000`);
 })
 
