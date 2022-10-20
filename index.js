@@ -29,9 +29,9 @@ io.on('connection', (socket) => { //event handler for a new socket connection
         io.emit('chat message', msg);
     });
 
-    socket.on('disconnect', () => {
-        io.emit('connection/disconnection message', "Update: " + name + " left the chat!")
-    });
+    // socket.on('disconnect', () => {
+    //     io.emit('connection/disconnection message', "Update: " + name + " left the chat!")
+    // });
 });
 
 server.listen(PORT, () => {
