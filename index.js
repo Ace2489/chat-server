@@ -35,6 +35,6 @@ io.on('connection', (socket) => { //event handler for a new socket connection
 });
 
 server.listen(PORT, () => {
-    console.log(`Listening on port 3000`);
+    console.log(`Listening on port ${PORT}`);
 })
 
