@@ -6,7 +6,7 @@ const { Server } = require('socket.io');
 const io = new Server(server);
 
 const people = {};
-const {join} = require('./connect-disconnect-handler')(io, people);
+const {join} = require('./join-disconnect-handler')(io, people);
 app.use(express.static('static'));
 
 
@@ -25,9 +25,7 @@ io.on('connection', (socket) => { //event handler for a new socket connection
         io.emit('chat message', msg);
     });
 
-    socket.on('disconnect', () => {
-        io.emit('connection/disconnection message', "Update: " + people[socket.id] + " left the chat!")
-    });
+    socket.on('disconnect',   ()=>{});
 });
 
 server.listen(3000, () => {
