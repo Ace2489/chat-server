@@ -6,7 +6,8 @@ module.exports = (io, people) => {
     };
 
     const disconnect = function() {
+        const socket = this;
         io.emit('connection/disconnection message', "Update: " + people[socket.id] + " left the chat!")
     }
-    return {join}
+    return {join, disconnect}
 } 
