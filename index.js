@@ -6,7 +6,9 @@ const { Server } = require('socket.io');
 const io = new Server(server);
 
 const people = {};
+const chatHandler = require('./chat-message-handler')(io);
 const {join, disconnect} = require('./join-disconnect-handler')(io, people);
+console.log(chatHandler);
 app.use(express.static('static'));
 
 
@@ -22,9 +24,7 @@ app.get('/', (req, res) => {
 io.on('connection', (socket) => { //event handler for a new socket connection
     socket.on('join message', join);
 
-    socket.on("chat message", (msg) => {
-        io.emit('chat message', msg);
-    });
+    socket.on("chat message", chatHandler);
 
     socket.on('disconnect', disconnect);
 });
