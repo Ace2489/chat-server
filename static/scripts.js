@@ -26,7 +26,7 @@ socket.emit("join message", username);
 
 socket.on("chat message", function (msg) {
     let item = document.createElement('li');
-    item.textContent = msg.message + " --- " + "from " + msg.username;
+    item.textContent = msg;
     messages.appendChild(item);
     window.scrollTo(0, document.body.scrollHeight);
 });
