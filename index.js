@@ -17,9 +17,6 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + 'static/index.html');
 })
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + 'userform.html');
-})
 
 io.on('connection', (socket) => { //event handler for a new socket connection
     socket.on('join message', join);
