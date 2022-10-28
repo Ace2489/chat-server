@@ -8,7 +8,6 @@ const io = new Server(server);
 const people = {};
 const chatHandler = require('./chat-message-handler')(io);
 const {join, disconnect} = require('./join-disconnect-handler')(io, people);
-console.log(chatHandler);
 app.use(express.static('static'));
 
 
