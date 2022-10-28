@@ -3,6 +3,7 @@
 </h1>
 
 <h4 align="center">A chat server built using the Socket.io framework in Node.js</h4>
+ <p align = "center"> <img src="https://user-images.githubusercontent.com/62785682/198514870-1384b57f-2ca5-4311-85d8-f9b2c610cedf.gif">
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
