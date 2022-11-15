@@ -16,7 +16,7 @@
 * Up to 5 simultaeneous clients.
 
   <a href="https://chat-server-l23v.onrender.com/">Live Demo</a> •
-Note: The site might need a few refreshes on the first try. This is because the server automatically goes to sleep after a certain period of time without connections. 
+Note: The site might need a few refreshes on the first try; the server automatically goes to sleep after a certain period of time without connections. 
 
 ## Installation and Setup
 You need to have [Node.js](https://nodejs.org/en/) installed on your machine to get the site running.
