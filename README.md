@@ -15,8 +15,11 @@
 * Realtime communication between clients.
 * Up to 5 simultaeneous clients.
 
-  <a href="https://chat-server-l23v.onrender.com/">Live Demo</a> •
-Note: The site might need a few refreshes on the first try; the server automatically goes to sleep after a certain period of time without connections. 
+``  <a href="https://chat-server-l23v.onrender.com/">Live Demo</a> •
+Note: The site might need a few refreshes on the first try; the server automatically goes to sleep after a certain period of time without connections. ``
+The site is currently down due to some issues with the hosting service, it will be up as soon as possible.
+
+
 
 ## Installation and Setup
 You need to have [Node.js](https://nodejs.org/en/) installed on your machine to get the site running.
