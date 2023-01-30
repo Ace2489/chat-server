@@ -15,11 +15,10 @@
 * Realtime communication between clients.
 * Up to 5 simultaeneous clients.
 
-<s href="https://chat-server-l23v.onrender.com/">Live Demo</s>
+<a href="http://nodechatserver-env.eba-epaw8gp5.us-east-1.elasticbeanstalk.com/">Live Demo<a/>
 
-<s>The site might need a few refreshes on the first try; the server automatically goes to sleep after a certain period of time without connections.</s>
-
-The site is currently down due to some issues with the hosting service, it will be up as soon as possible.
+<s> The site is currently down due to some issues with the hosting service, it will be up as soon as possible.</s>
+<p>We're back!! </p>
 
 
 
