@@ -13,7 +13,7 @@
 ## Key Features
 
 * Realtime communication between clients.
-* Up to 5 simultaeneous clients.
+* Up to 5 simultaneous clients.
 
 <a href="http://nodechatserver-env.eba-epaw8gp5.us-east-1.elasticbeanstalk.com/">Live Demo<a/>
 
